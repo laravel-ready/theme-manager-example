@@ -1,0 +1,13 @@
+{
+    "name": "Green Energy",
+    "alias": "green-energy",
+    "description": "Green energy is any energy type that is generated from natural resources.",
+    "authors": [
+        {
+            "name": "EgoistDeveloper",
+            "contact": "https://github.com/EgoistDeveloper/"
+        }
+    ],
+    "version": "4.1.3",
+    "group": "web"
+}

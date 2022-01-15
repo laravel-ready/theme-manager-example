@@ -1,0 +1,47 @@
+footer {
+    @apply bg-white;
+
+    .footer-container {
+        @apply container mx-auto px-8;
+
+        .footer-wrapper {
+            @apply w-full flex flex-col md:flex-row py-6;
+
+            .brand {
+                @apply flex-1 mb-6 text-black;
+
+                a {
+                    @apply text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl;
+
+                    svg {
+                        @apply h-8 fill-current inline;
+                    }
+                }
+            }
+
+            .column {
+                @apply flex-1;
+
+                .title {
+                    @apply uppercase text-gray-500 md:mb-6;
+                }
+
+                ul {
+                    @apply mb-6;
+
+                    li {
+                        @apply mt-2 inline-block mr-2 md:block md:mr-0;
+
+                        a {
+                            @apply no-underline hover:underline text-gray-800 hover:text-pink-500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .freepik {
+        @apply text-gray-500;
+    }
+}

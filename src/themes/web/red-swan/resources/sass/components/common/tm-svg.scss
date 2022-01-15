@@ -1,0 +1,122 @@
+.tm-svg {
+    &.tm-18px.tm-set,
+    .tm-18px.tm:before {
+        font-size: 18px
+    }
+
+    &.tm-24px.tm-set,
+    .tm-24px.tm:before {
+        font-size: 24px
+    }
+
+    &.tm-36px.tm-set,
+    .tm-36px.tm:before {
+        font-size: 36px
+    }
+
+    &.tm-48px.tm-set,
+    .tm-48px.tm:before {
+        font-size: 48px
+    }
+
+    &.tm-dark:before {
+        color: rgba(0, 0, 0, 0.54)
+    }
+
+    &.tm-dark.tm-inactive:before {
+        color: rgba(0, 0, 0, 0.26)
+    }
+
+    &.tm-light:before {
+        color: #fff
+    }
+
+    &.tm-light.tm-inactive:before {
+        color: rgba(255, 255, 255, 0.3)
+    }
+
+    &.tm-rotate-45:before {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg)
+    }
+
+    &.tm-rotate-90:before {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg)
+    }
+
+    &.tm-rotate-135:before {
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg)
+    }
+
+    &.tm-rotate-180:before {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+
+    &.tm-rotate-225:before {
+        -webkit-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+        transform: rotate(225deg)
+    }
+
+    &.tm-rotate-270:before {
+        -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        transform: rotate(270deg)
+    }
+
+    &.tm-rotate-315:before {
+        -webkit-transform: rotate(315deg);
+        -ms-transform: rotate(315deg);
+        transform: rotate(315deg)
+    }
+
+    &.tm-flip-h:before {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH"
+    }
+
+    &.tm-flip-v:before {
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+        filter: FlipV;
+        -ms-filter: "FlipV"
+    }
+
+    &.tm-spin:before {
+        -webkit-animation: tm-spin 2s infinite linear;
+        animation: tm-spin 2s infinite linear
+    }
+
+    @-webkit-keyframes tm-spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg)
+        }
+
+        100% {
+            -webkit-transform: rotate(359deg);
+            transform: rotate(359deg)
+        }
+    }
+
+    @keyframes tm-spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg)
+        }
+
+        100% {
+            -webkit-transform: rotate(359deg);
+            transform: rotate(359deg)
+        }
+    }
+}

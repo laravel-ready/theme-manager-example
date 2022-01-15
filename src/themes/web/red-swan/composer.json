@@ -1,0 +1,39 @@
+{
+    "name": "laravel-ready/red-swan",
+    "description": "Web theme",
+    "type": "library",
+    "license": "Other",
+    "keywords": [
+        "any"
+    ],
+    "authors": [
+        {
+            "name": "EgoistDeveloper",
+            "email": "epsilonelittr@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/laravel-ready/theme-manager-example/issues",
+        "source": "https://github.com/laravel-ready/theme-manager-example"
+    },
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

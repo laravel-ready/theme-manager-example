@@ -1,0 +1,13 @@
+{
+    "name": "Red Swan",
+    "alias": "red-swan",
+    "description": "The awesome red swan web site theme. Made with love and passion.",
+    "authors": [
+        {
+            "name": "EgoistDeveloper",
+            "contact": "https://github.com/EgoistDeveloper/"
+        }
+    ],
+    "version": "1.0.1",
+    "group": "web"
+}

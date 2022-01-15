@@ -1,0 +1,82 @@
+// .blog {
+//     @apply flex flex-wrap gap-3
+//     border border-gray-200
+//     rounded-xl px-5 py-5;
+
+//     /* blog card */
+//     .blog-card {
+//         @apply flex-auto w-64 bg-white mb-6 tracking-wide  shadow-lg
+//         border border-gray-50 hover:border-gray-100;
+
+//         .thumb {
+//             @apply md:flex-shrink-0
+//             hover:scale-105 transition transform duration-500 cursor-pointer;
+
+//             img {
+//                 @apply w-full h-64 hover:scale-105 transition transform duration-500 cursor-pointer;
+//             }
+//         }
+
+//         .body {
+//             @apply px-4 pt-2 pb-4 mt-2;
+
+//             .title {
+//                 @apply font-bold text-xl text-gray-800 tracking-normal;
+//             }
+
+//             .summary {
+//                 @apply text-sm text-gray-700 pr-2 mt-2;
+//             }
+
+//             .meta {
+//                 @apply flex flex-nowrap text-gray-500 text-xs font-semibold mt-2;
+
+//                 .tm-svg {
+//                     @apply fill-gray-500;
+
+//                     height: 18px;
+//                 }
+
+//                 .date {
+//                     @apply align-bottom ml-1;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.blog {
+    @apply flex flex-wrap;
+
+    .blog-card {
+        @apply max-w-lg mx-auto;
+
+        .card-container {
+            @apply bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5;
+
+            a {
+                img {
+                    @apply rounded-t-lg;
+                }
+            }
+
+            .details {
+                @apply p-5;
+
+                a {
+                    .title {
+                        @apply text-gray-900 font-bold text-2xl tracking-tight mb-2;
+                    }
+                }
+
+                .summary {
+                    @apply font-normal text-gray-700 mb-3;
+                }
+
+                .read-more {
+                    @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+/* breadcrumb */
+.breadcrumb {
+    @apply flex items-center
+    py-4 px-4 overflow-y-auto my-20
+    whitespace-nowrap
+    border border-gray-50 hover:border-gray-100
+    transition-colors duration-500;
+
+    .tm-svg {
+        @apply w-5 h-5 fill-gray-500;
+    }
+
+    .home {
+        .tm-svg {
+            @extend .tm-svg;
+            @apply hover:fill-gray-500 duration-300 transition-colors;
+        }
+    }
+
+    .chevron {
+        @apply mx-2;
+
+        .tm-svg {
+            @extend .tm-svg;
+            @apply fill-gray-400;
+        }
+    }
+
+    .crumb {
+        @apply text-gray-600 duration-300 transition-all;
+
+        &.link{
+            @apply hover:underline;
+        }
+
+        &.active{
+            @apply text-blue-600;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Dark Night",
+    "alias": "dark-night",
+    "description": "Find the perfect lights in darker nights. Look at the shiny stars.",
+    "authors": [
+        {
+            "name": "EgoistDeveloper",
+            "contact": "https://github.com/EgoistDeveloper/"
+        }
+    ],
+    "version": "1.1.3",
+    "group": "web"
+}

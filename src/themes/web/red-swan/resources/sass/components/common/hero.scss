@@ -1,0 +1,39 @@
+.hero {
+    @apply pt-24;
+
+    .hero-container {
+        @apply container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center;
+
+        .left-col {
+            @apply flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left;
+
+            .top-title {
+                @apply uppercase w-full;
+            }
+
+            .master-title {
+                @apply my-4 text-5xl font-bold leading-tight;
+            }
+
+            .sub-title {
+                @apply leading-normal text-2xl mb-8;
+            }
+
+            .subscribe {
+                @apply mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-md transform transition hover:scale-105 duration-300 ease-in-out;
+            }
+        }
+
+        .right-col {
+            @apply w-full md:w-3/5 py-6 text-center;
+
+            img {
+                @apply w-full md:w-4/5 z-50;
+            }
+        }
+    }
+}
+
+.hero-wave {
+    @apply relative -mt-12 lg:-mt-24;
+}
