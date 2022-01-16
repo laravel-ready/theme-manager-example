@@ -19,7 +19,7 @@ class LandingController extends Controller
     public function index(ThemeManager $themeManager){
         $themeGroups = $themeManager->scanThemes(true);
 
-        return View('welcome', compact('themeGroups'));
+        return View('web.welcome', compact('themeGroups'));
     }
 
     public function anyPage(){
