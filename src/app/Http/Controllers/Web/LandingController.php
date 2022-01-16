@@ -3,8 +3,6 @@
 namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\View;
 
 use LaravelReady\ThemeManager\Services\ThemeManager;
 
@@ -14,9 +12,8 @@ class LandingController extends Controller
         $themeManager->scanThemes(true);
 
         $theme = request()->query('theme', 'green-energy');
-        $group = request()->query('group', 'web');
 
-        $themeManager->setTheme($theme, $group);
+        $themeManager->setTheme($theme, 'web');
     }
 
     public function index(ThemeManager $themeManager){

@@ -1,0 +1,13 @@
+{
+    "name": "Admin Who?",
+    "alias": "admin-who",
+    "description": "Dolore officia adipisicing veniam minim veniam dolore reprehenderit elit et minim.",
+    "authors": [
+        {
+            "name": "EgoistDeveloper",
+            "contact": "https://github.com/EgoistDeveloper/"
+        }
+    ],
+    "version": "0.0.0",
+    "group": "admin"
+}
