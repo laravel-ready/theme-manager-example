@@ -8,21 +8,23 @@ use LaravelReady\ThemeManager\Services\ThemeManager;
 
 class LandingController extends Controller
 {
-    public function __construct(ThemeManager $themeManager) {
-        $themeManager->scanThemes(true);
+    public function __construct() {
+        ThemeManager::addDefaultTheme(['web:red-swan']);
+
+        ThemeManager::removeDefaultTheme(['web:red-swan']);
 
         $theme = request()->query('theme', 'green-energy');
 
-        $themeManager->setTheme($theme, 'web');
+        ThemeManager::setTheme($theme, 'web');
     }
 
-    public function index(ThemeManager $themeManager){
-        $themeGroups = $themeManager->scanThemes(true);
+    public function index(){
+        $themeGroups = ThemeManager::scanThemes(true);
 
         return View('web.welcome', compact('themeGroups'));
     }
 
     public function anyPage(){
-        return View('theme::pages.landing.index');
+        return View('theme::pages.home.index');
     }
 }

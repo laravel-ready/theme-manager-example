@@ -8,17 +8,15 @@ use LaravelReady\ThemeManager\Services\ThemeManager;
 
 class IndexController extends Controller
 {
-    public function __construct(ThemeManager $themeManager) {
-        $themeManager->scanThemes(true);
+    public function __construct() {
+        ThemeManager::addDefaultTheme(['admin:admin-who']);
 
         $theme = request()->query('theme', 'gentelella');
 
-        $themeManager->setTheme($theme, 'admin');
+        ThemeManager::setTheme($theme, 'admin');
     }
 
-    public function index(ThemeManager $themeManager){
-        $themeGroups = $themeManager->scanThemes(true);
-
+    public function index(){
         return View('admin.welcome', compact('themeGroups'));
     }
 
