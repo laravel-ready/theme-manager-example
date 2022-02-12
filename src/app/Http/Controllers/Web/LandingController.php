@@ -11,11 +11,9 @@ class LandingController extends Controller
     public function __construct() {
         ThemeManager::addDefaultTheme(['web:red-swan']);
 
-        ThemeManager::removeDefaultTheme(['web:red-swan']);
+        $this->theme = request()->query('theme', 'green-energy');
 
-        $theme = request()->query('theme', 'green-energy');
-
-        ThemeManager::setTheme($theme, 'web');
+        ThemeManager::setTheme($this->theme, 'web');
     }
 
     public function index(){
@@ -25,6 +23,8 @@ class LandingController extends Controller
     }
 
     public function anyPage(){
+        ThemeManager::setThemeStatus($this->theme, 'web', true);
+
         return View('theme::pages.home.index');
     }
 }

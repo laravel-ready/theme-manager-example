@@ -43,7 +43,7 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace)
                 ->group(base_path('routes/api.php'));
 
-            Route::middleware(['web', 'theme-manager:restrict_group=web'])
+            Route::middleware(['web', 'theme-manager:restrict_group=web, group=web'])
                 ->namespace("{$this->namespace}\\Web")
                 ->group(base_path('routes/web.php'));
 
