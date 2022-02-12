@@ -21,6 +21,6 @@ class IndexController extends Controller
     }
 
     public function anyPage(){
-        return View('theme::pages.landing.index');
+        return View('theme::pages.dashboard.index');
     }
 }
