@@ -17,4 +17,5 @@ yarn-error.log
 
 storage/views/*
 
-composer.lock
+*.lock
+*.old
