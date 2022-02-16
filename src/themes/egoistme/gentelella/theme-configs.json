@@ -1,6 +1,7 @@
 {
     "name": "Gentelella",
-    "alias": "gentelella",
+    "vendor": "egoistme",
+    "theme": "gentelella",
     "description": "Gentelella Admin is a free to use Bootstrap admin template.",
     "authors": [
         {

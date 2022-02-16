@@ -3,6 +3,13 @@
         Options -MultiViews -Indexes
     </IfModule>
 
+    # Options +FollowSymLinks -Indexes
+
+    <Directory />
+        Options Indexes FollowSymLinks
+        AllowOverride None
+    </Directory>
+
     RewriteEngine On
 
     # Handle Authorization Header

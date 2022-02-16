@@ -1,6 +1,7 @@
 {
     "name": "Dark Night",
-    "alias": "dark-night",
+    "vendor": "egoistdev",
+    "theme": "dark-night",
     "description": "Find the perfect lights in darker nights. Look at the shiny stars.",
     "authors": [
         {

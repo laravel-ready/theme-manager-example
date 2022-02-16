@@ -49,10 +49,11 @@ buildStyles();
 
 const getThemeFolder = function(){
     const _themeFolder = path.basename(path.resolve('./')),
-        _groupFolder = path.basename(path.resolve('./../'));
+        _vendorFolder = path.basename(path.resolve('./../'));
 
-    themeFolder = `${_groupFolder}/${_themeFolder}`;
+    themeFolder = `${_vendorFolder}/${_themeFolder}`;
 }
+
 
 getThemeFolder();
 
@@ -60,8 +61,9 @@ getThemeFolder();
 
 if (mix.inProduction()) {}
 
-const appPublicThemeFolder = path.resolve(`./../../../public/themes/${themeFolder}`);
+const appPublicThemeFolder = 'public';
 
-mix.copy('./public/js', `${appPublicThemeFolder}/js`);
-mix.copy('./public/css', `${appPublicThemeFolder}/css`);
+// mix.copy('./public/js', `${appPublicThemeFolder}/js`);
+// mix.copy('./public/css', `${appPublicThemeFolder}/css`);
+// mix.copy('./resources/images', `${appPublicThemeFolder}/images`);
 mix.copy('./resources/images', `${appPublicThemeFolder}/images`);

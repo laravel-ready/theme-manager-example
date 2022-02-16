@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  # app
+  tm_example_app:
+    image: serversideup/php:8.1-fpm
+    container_name: tm_example_app
+    stdin_open: true
+    tty: true
+    environment:
+      RUN_LARAVEL_AUTOMATIONS: "true"
+    ports:
+      - 8000:9000
+    volumes:
+      - ./src:/var/www/html
+      - C:/Users/e9396/Documents/GitHub/laravel-ready/theme-manager:/var/www/html/laravel-ready/theme-manager/src
+    command: php -S tm_example_app:9000 -t public

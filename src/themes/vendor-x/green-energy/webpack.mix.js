@@ -5,8 +5,6 @@ const tailwindcss = require('tailwindcss');
 const fs = require('fs');
 const path = require("path");
 
-var themeFolder = '';
-
 const publicJsFolder = 'public/js';
 
 mix.js('resources/js/main.js', publicJsFolder).then(() => {
@@ -17,9 +15,9 @@ mix.js('resources/js/main.js', publicJsFolder).then(() => {
 
 const getThemeFolder = function(){
     const _themeFolder = path.basename(path.resolve('./')),
-        _groupFolder = path.basename(path.resolve('./../'));
+        _vendorFolder = path.basename(path.resolve('./../'));
 
-    themeFolder = `${_groupFolder}/${_themeFolder}`;
+    themeFolder = `${_vendorFolder}/${_themeFolder}`;
 }
 
 getThemeFolder();
@@ -27,7 +25,8 @@ getThemeFolder();
 //#endregion
 
 
-const appPublicThemeFolder = path.resolve(`./../../../public/themes/${themeFolder}`);
+// const appPublicThemeFolder = path.resolve(`./../../../../public/themes/${themeFolder}`);
+const appPublicThemeFolder = 'public';
 
 mix.copy('./public/js', `${appPublicThemeFolder}/js`);
 mix.copy('./public/css', `${appPublicThemeFolder}/css`);

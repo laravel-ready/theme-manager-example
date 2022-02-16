@@ -1,6 +1,7 @@
 {
     "name": "Admin Who?",
-    "alias": "admin-who",
+    "vendor": "egoistdev",
+    "theme": "admin-who",
     "description": "Dolore officia adipisicing veniam minim veniam dolore reprehenderit elit et minim.",
     "authors": [
         {
@@ -8,7 +9,7 @@
             "contact": "https://github.com/EgoistDeveloper/"
         }
     ],
-    "version": "0.0.0",
+    "version": "1.0.0",
     "group": "admin",
     "status": true
 }

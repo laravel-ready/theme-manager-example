@@ -1,6 +1,7 @@
 {
     "name": "Green Energy",
-    "alias": "green-energy",
+    "vendor": "vendor-x",
+    "theme": "green-energy",
     "description": "Green energy is any energy type that is generated from natural resources.",
     "authors": [
         {

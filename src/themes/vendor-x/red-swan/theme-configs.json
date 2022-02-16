@@ -1,6 +1,7 @@
 {
     "name": "Red Swan",
-    "alias": "red-swan",
+    "vendor": "vendor-x",
+    "theme": "red-swan",
     "description": "The awesome red swan web site theme. Made with love and passion.",
     "authors": [
         {

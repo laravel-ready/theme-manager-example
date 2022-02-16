@@ -23,7 +23,7 @@
 </head>
 
 <body class="antialiased">
-    <div class="relative flex items-top justify-center min-h-screen bg-gray-100 sm:items-center py-4 sm:pt-0">
+    <div class="relative flex items-top justify-center min-h-screen bg-gray-100 sm:items-center sm:pt-0 pb-32">
         <div class="flex flex-col">
             <h1 class="font-bold text-4xl text-center my-20">
                 Choose the Theme
