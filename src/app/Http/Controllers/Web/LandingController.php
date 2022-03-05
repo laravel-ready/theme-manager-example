@@ -13,10 +13,10 @@ class LandingController extends Controller
 
         ThemeManager::reScanThemes();
 
-        $this->theme = request()->query('theme', 'vendor-x/green-energy');
+        $theme = request()->query('theme', 'vendor-x/green-energy');
 
-        ThemeManager::setThemeStatus($this->theme, true);
-        ThemeManager::setTheme($this->theme);
+        ThemeManager::setThemeStatus($theme, true);
+        ThemeManager::setTheme($theme);
     }
 
     public function index()
@@ -33,8 +33,6 @@ class LandingController extends Controller
 
     public function anyPage()
     {
-        ThemeManager::setTheme($this->theme);
-
         return View('theme::pages.home.index');
     }
 }

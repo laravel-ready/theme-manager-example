@@ -19,3 +19,5 @@ storage/views/*
 
 *.lock
 *.old
+
+themes/**/*.zip
