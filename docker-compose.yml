@@ -13,5 +13,4 @@ services:
       - 8000:9000
     volumes:
       - ./src:/var/www/html
-      - C:/Users/e9396/Documents/GitHub/laravel-ready/theme-manager:/var/www/html/laravel-ready/theme-manager/src
     command: php -S tm_example_app:9000 -t public

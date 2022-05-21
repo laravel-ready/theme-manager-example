@@ -166,6 +166,8 @@ return [
          * Package Service Providers...
          */
 
+        LaravelReady\ThemeManager\ThemeServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
